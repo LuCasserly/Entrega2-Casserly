@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: lightgray;
+}
+
+/* Index */
+
+div.titulo {
+    background-color: #5dc584;
+    text-align: center;
+    font-size: large;
+    padding: 5px;
+    
+}
+
+header {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.logo-pagina {
+    display: flex;
+    width: 15rem;
+    height: 15rem;
+    margin: auto;
+}
+
+
+.todo-sobre-fracciones {
+    color: black;
+    text-align: center;
+    text-decoration: solid;
+    margin-top: 20px;
+    
+}
+
+a {
+    font-size: medium;
+}
+
+.enlaces:hover {
+    background-color: gray;
+    opacity: 0.7;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: column;
+}
+
+.presentacion {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.video-definicion {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    width: 15em;
+    height: 15em;
+}
+
+
+@media (min-width:1024px) {
+
+    .enlaces {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .introduccion {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .video-definicion {
+        width: 75%;
+        height: auto;
+        margin: auto;
+    }
+
+    .imagenes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly
+    }
+}
+
+/* Links a las distintas páginas del sitio web a partir de imágenes*/
+
+.img1:hover {
+    opacity: 0.5;
+}
+
+.img2:hover {
+    opacity: 0.5;
+}
+
+.img3:hover {
+    opacity: 0.5;
+}
+
+.img4:hover {
+    opacity: 0.5;
+}
+
+
+/* Subtítulos de todas las secciones */
+
+.h2-clasificacion,
+.equivalentes,
+.h2-sumayresta,
+.h2-multydiv {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 200%;
+}
+
+footer {
+    text-align: center;
+}
+
+
+/* Menu de navegación */
+
+.Menu {
+    /*display: flex;*/
+    background-color: #5dc584;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5rem;
+}
+
+.Menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.Menu a {
+    justify-content: space-evenly;
+    color: black;
+    text-decoration: none;
+}
+
+
+.images {
+    display: flex;
+}
+
+.img-home {
+    width: 35px;
+    height: 35px;
+}
+
+
+/*footer*/
+
+.grid-container-footer {
+    display: grid;
+    width:100%;
+    grid-template-areas:
+        "img p a";
+    align-items: center;
+    justify-items: center;
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid black;
+}
+
+.p-footer {
+    grid-area: p;
+}
+
+.img-footer {
+    grid-area: img;
+    width: 60px;
+    height: 50px;
+}
+
+.a-footer {
+    grid-area: a;
+
+}
+
+
+/* Clasificación de fracciones*/
+
+.img-clasificacion {
+    display: flex;
+}
+
+.img-c {
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    justify-items: center;
+}
+
+.definiciones {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    
+}
+
+.img-propia,
+.img-impropia,
+.img-aparente,
+.img-mixta {
+    display: flex;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 15px;
+}
+
+.p-propia,
+.p-impropia,
+.p-mixta,
+.p-aparente {
+    text-align: center;
+    font-size: small;
+}
+
+@media (min-width: 1024px) {
+
+    .img-c {
+        width: 50%;
+        margin: auto;
+    }
+
+    .grid-container-clasificacion {
+        display: grid;
+        grid-template-areas:
+            "img1 p1"
+            "img2 p2"
+            "img3 p3"
+            "img4 p4";
+        justify-items: center;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+    .img-propia,
+    .img-impropia,
+    .img-aparente,
+    .img-mixta {
+        width: 50%;
+        height: 300px;
+        margin: auto;
+    }
+
+    .p-propia,
+    .p-impropia,
+    .p-aparente,
+    .p-mixta {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 100px;
+        align-items: center;
+        font-size: large;
+
+    }
+
+    .img-propia {
+        grid-area: img1;
+    }
+
+    .p-propia {
+        grid-area: p1;
+    }
+
+    .img-impropia {
+        grid-area: img2;
+    }
+
+    .p-impropia {
+        grid-area: p2;
+    }
+
+    .img-aparente {
+        grid-area: img3;
+    }
+
+    .p-aparente {
+        grid-area: p3;
+        text-align: center;
+    }
+
+    .img-mixta {
+        grid-area: img4;
+    }
+
+    .p-mixta {
+        grid-area: p4;
+    }
+}
+
+/*Fracciones equivalentes*/
+
+.definicion-equivalentes h2,
+.metodo-equivalentes h2,
+.como-encontrar-equivalentes h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.definicion-equivalentes,
+.metodo-equivalentes,
+.como-encontrar-equivalentes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h3 {
+    text-align: left;
+    padding: 15px;
+}
+
+.ej-equivalente {
+    width: 100%;
+    height: auto;
+}
+
+.amplificando {
+    width: 100%;
+    margin: auto;
+}
+
+.simplificando {
+    width: 100%;
+    margin: auto;
+}
+
+.metodo-equivalentes div {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.como-encontrar-equivalentes h4 {
+    text-align: center;
+    font-size: x-large;
+    text-decoration: solid;
+    padding: 10px;
+}
+
+.como-encontrar-equivalentes div {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+@media (min-width: 1024px) {
+
+    h2 {
+        font-size: xx-large;
+    }
+
+    p {
+        font-size: large;
+    }
+
+    .ej-equivalente {
+        width: 50%;
+        height: auto;
+    }
+
+    h3 {
+        font-size: x-large;
+    }
+
+    .amplificando,
+    .simplificando {
+
+        width: 50%;
+        height: auto;
+    }
+}
+
+
+/* Suma y resta */
+
+.sumayresta-p {
+
+    text-align: justify;
+    padding: 20px;
+}
+
+.video1,
+.video2 {
+    display: flex;
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.sumayresta-igual,
+.sumayresta-distinto {
+    text-align: center;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.video{
+    width: 70%;
+    height: auto;
+   text-align: center;
+}
+
+@media (min-width: 1024px) {
+
+.sumayresta p {
+    display: flex;
+    text-align: justify;
+    padding-bottom: 20px;
+    padding: 10px;
+}
+
+.grid-container-sumayresta {
+    display: grid;
+    grid-template-areas:
+        "h2a h2b"
+        "video1 video2";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    column-gap: 2px;
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.sumayresta-igual {
+    grid-area: h2a;
+}
+
+.video1 {
+    grid-area: video1;
+}
+}
+
+/*Multiplicación y división*/
+
+
+@media (min-width: 1024px) {
+.multydiv {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.saber-mas {
+    display: grid;
+    margin-top: 100px;
+    grid-template-areas:
+        "h2"
+        "video";
+}
+
+.saber-mas h2 {
+    text-align: left;
+    margin: 10px;
+}
+
+.sabermas-video {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+}
