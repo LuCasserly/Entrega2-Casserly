@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +7,9 @@
 
 body {
 
-    font-family: "Host Grotesk", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    background-color: lightgray;
+    font-family: "Montserrat",serif;
 }
+
 
 /* Index */
 
@@ -18,7 +18,7 @@ div.titulo {
     text-align: center;
     font-size: large;
     padding: 5px;
-    
+
 }
 
 header {
@@ -39,7 +39,7 @@ header {
     text-align: center;
     text-decoration: solid;
     margin-top: 20px;
-    
+
 }
 
 a {
@@ -187,7 +187,7 @@ footer {
 
 .grid-container-footer {
     display: grid;
-    width:100%;
+    width: 100%;
     grid-template-areas:
         "img p a";
     align-items: center;
@@ -230,7 +230,7 @@ footer {
     display: flex;
     padding: 20px;
     justify-content: center;
-    
+
 }
 
 .img-propia,
@@ -438,69 +438,69 @@ h3 {
     margin-bottom: 15px;
 }
 
-.video{
+.video {
     width: 70%;
     height: auto;
-   text-align: center;
+    text-align: center;
 }
 
 @media (min-width: 1024px) {
 
-.sumayresta p {
-    display: flex;
-    text-align: justify;
-    padding-bottom: 20px;
-    padding: 10px;
-}
+    .sumayresta p {
+        display: flex;
+        text-align: justify;
+        padding-bottom: 20px;
+        padding: 10px;
+    }
 
-.grid-container-sumayresta {
-    display: grid;
-    grid-template-areas:
-        "h2a h2b"
-        "video1 video2";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
-    column-gap: 2px;
-    justify-items: center;
-    align-items: center;
-    margin: 20px;
-}
+    .grid-container-sumayresta {
+        display: grid;
+        grid-template-areas:
+            "h2a h2b"
+            "video1 video2";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        column-gap: 2px;
+        justify-items: center;
+        align-items: center;
+        margin: 20px;
+    }
 
-.sumayresta-igual {
-    grid-area: h2a;
-}
+    .sumayresta-igual {
+        grid-area: h2a;
+    }
 
-.video1 {
-    grid-area: video1;
-}
+    .video1 {
+        grid-area: video1;
+    }
 }
 
 /*Multiplicación y división*/
 
 
 @media (min-width: 1024px) {
-.multydiv {
-    display: flex;
-    margin-bottom: 20px;
-    justify-content: center;
-}
+    .multydiv {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
 
-.saber-mas {
-    display: grid;
-    margin-top: 100px;
-    grid-template-areas:
-        "h2"
-        "video";
-}
+    .saber-mas {
+        display: grid;
+        margin-top: 100px;
+        grid-template-areas:
+            "h2"
+            "video";
+    }
 
-.saber-mas h2 {
-    text-align: left;
-    margin: 10px;
-}
+    .saber-mas h2 {
+        text-align: left;
+        margin: 10px;
+    }
 
-.sabermas-video {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
+    .sabermas-video {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
 }

@@ -5,7 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            background-color: lightgray;
+        }
+
+        footer {
+            background-color: lightgray;
+        }
+    </style>
 
 </head>
 
@@ -15,7 +28,7 @@
     <div class="titulo"> Fracciones con Lu </div>
     <header>
         <a name="arriba"></a>
-        <h1 class="todo-sobre-fracciones"> TODO SOBRE FRACCIONES</h1>
+        <h1 class="todo-sobre-fracciones fw-bold fs-2"> TODO SOBRE FRACCIONES</h1>
         <img src="../assets/TODO SOBRE FRACCIONES - LOGO.png" alt="logo" width="250px">
         <a name="arriba"></a>
 
@@ -34,7 +47,8 @@
 
             <h2 class="h2-sumayresta">Suma y resta de fracciones</h2>
 
-            <p class="sumayresta-p"> Para poder sumar y restar fracciones, es necesario tener el mismo denominador. Cuándo las fracciones
+            <p class="sumayresta-p"> Para poder sumar y restar fracciones, es necesario tener el mismo denominador.
+                Cuándo las fracciones
                 tienen ya el mismo denominador, se suman o se restan los numeradores y se guarda el denominador.
                 Cuando no tienen el mismo denominador, se toman los denominadores y se encuentra el mcm. Luego se
                 multiplican las fracciónes por sus números correspondientes para obtener el mismo denominador sin
@@ -55,7 +69,7 @@
         </section>
     </main>
 
-    <footer>
+    <!--<footer>
         <div class="grid-container-footer">
             <div class="img-footer"> <img src="../assets/TODO SOBRE FRACCIONES - LOGO.png" alt="logo" width="50px">
             </div>
@@ -64,7 +78,24 @@
             </div>
 
         </div>
+    </footer>-->
+
+    <footer>
+        <div class="card text-center" style="background-color: lightgray;">
+            <div class="card-header">
+                <img src="../assets/TODO SOBRE FRACCIONES - LOGO.png" alt="logo" width="50px">
+            </div>
+            <div class="card-body">
+                <p class="card-text">Todos los derechos reservados</p>
+                <a href="#arriba" class="btn btn-primary">Volver arriba</a>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
