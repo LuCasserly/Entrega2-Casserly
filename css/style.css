@@ -8,6 +8,7 @@
 body {
 
     font-family: "Montserrat",serif;
+    background-color: lightgrey;
 }
 
 
@@ -185,6 +186,30 @@ footer {
 
 /*footer*/
 
+button {
+    background-color: #5dc584;
+    border: #5dc584;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+.link-arriba {
+    text-decoration: none;
+    color: black;
+}
+
+.grid-container-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-top: 1px solid black;
+}
+
+@media (min-width:1024px) {
+    
 .grid-container-footer {
     display: grid;
     width: 100%;
@@ -212,6 +237,9 @@ footer {
 
 }
 
+
+
+}
 
 /* Clasificación de fracciones*/
 
@@ -422,27 +450,32 @@ h3 {
     padding: 20px;
 }
 
-.video1,
-.video2 {
+.video-igual,
+.video-diferente {
     display: flex;
     width: 70%;
     height: auto;
-    margin-bottom: 20px;
-    margin-left: 10px;
+   margin: auto;
+
 }
 
 .sumayresta-igual,
 .sumayresta-distinto {
-    text-align: center;
     display: flex;
+    text-align: center;
+    margin-top: 20px;
     margin-bottom: 15px;
+    
 }
 
-.video {
-    width: 70%;
-    height: auto;
-    text-align: center;
+.sumayresta-igual {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
+
+
 
 @media (min-width: 1024px) {
 
@@ -461,18 +494,34 @@ h3 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 2fr;
         column-gap: 2px;
-        justify-items: center;
+        justify-content: center;
         align-items: center;
         margin: 20px;
     }
 
     .sumayresta-igual {
         grid-area: h2a;
+        text-align: center;
+        margin: auto;
     }
 
-    .video1 {
+    .video-igual {
         grid-area: video1;
+        margin: auto;
     }
+
+
+.sumayresta-distinto {
+    grid-area: h2b;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.video-diferente {
+    grid-area: video2;
+    margin:auto;
+}
 }
 
 /*Multiplicación y división*/
